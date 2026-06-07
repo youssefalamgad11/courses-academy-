@@ -1,0 +1,68 @@
+:root {
+  --gold: #c9a84c;
+  --gold-light: #e8c97a;
+  --gold-dark: #8a6a1f;
+  --black: #080808;
+  --dark: #111111;
+  --dark2: #1a1a1a;
+  --dark3: #242424;
+  --white: #f5f0e8;
+  --white-dim: #c8c0b0;
+  --accent: #c9a84c;
+  --font-ar: 'Cairo', sans-serif;
+  --font-en: 'Playfair Display', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font-ar);
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-ar);
+  border: none;
+  outline: none;
+}
+
+input, textarea, select {
+  font-family: var(--font-ar);
+  outline: none;
+}
+
+/* Utility */
+.gold { color: var(--gold); }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
